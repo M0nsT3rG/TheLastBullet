@@ -1,200 +1,246 @@
-\ The Last Bullet\
-\You have one bullet. Make it count.\
+<div align="center">
 
----------------------------------------------------------------------------------
+# 🎯 THE LAST BULLET
 
-\The Last Bullet\ is a short first-person psychological horror game created in \Unreal Engine 5.8\
+### *You have one bullet. Make it count.*
 
-You are trapped inside a dark abandoned tunnel with a creature that only moves when you stop looking at it.
+A short first-person psychological horror game  
+built with **Unreal Engine 5.8**
 
-You have one bullet.
+<br>
 
-Whether you use it is up to you.
+**🎮 PLAYABLE NOW ON ITCH.IO**
 
----------------------------------------------------------------------------------
+<a href="https://m0nst3rg.itch.io/the-last-bullet" target="_blank">The Last  Bullet</a>
 
- \🎮 Play the Game\
+*Available for Windows*
 
----------------------------------------------------------------------------------
+<br>
 
-The Last Bullet is available on itch.io:
+![Version](https://img.shields.io/badge/version-v1.0.1-darkred)
+![Engine](https://img.shields.io/badge/Unreal%20Engine-5.8-black)
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
+![Status](https://img.shields.io/badge/status-Released-success)
 
-\https://m0nst3rg.itch.io/the-last-bullet\
+</div>
 
-\Platform:
-- Windows
+---
 
----------------------------------------------------------------------------------
+## 🩸 About The Game
 
- \🕹️ Controls\
+**The Last Bullet** is a short psychological horror experience built around one simple rule:
 
----------------------------------------------------------------------------------
+> **You only have one bullet.**
 
-| Action | Key |
+You wake inside a dark, abandoned tunnel.
 
-|---|---|
+Something is following you.
 
-| Move | WASD |
+It moves when you stop looking at it.
 
-| Look | Mouse |
+Your flashlight can reveal what is hiding in the darkness, but eventually you will have to decide whether your only bullet is really meant for the creature hunting you.
 
-| Fire | Left Mouse Button |
+---
 
-| Flashlight | F |
+## 👁️ The Threat
 
-| Pause | ESC |
+The creature known as **Whisper** follows one terrifying rule:
 
----------------------------------------------------------------------------------
+> **If you can see it, it cannot move.**
 
-  \👁️ Gameplay\
+Look away...
 
----------------------------------------------------------------------------------
+...and it gets closer.
 
-The main mechanic revolves around a creature called \*\Whisper\*\.
+Whisper can:
 
-# 
-Whisper:
-# 
+- 👁️ Freeze while being watched
+- 🏃 Chase the player when unseen
+- 🔊 Be heard approaching through positional audio
+- 🩸 Attack the player at close range
+- 💀 Kill the player after three successful attacks
+- 🔫 Be killed with your only bullet
 
-\- moves while the player is not looking at it
+But using that bullet may have consequences.
 
-\- freezes while being watched
+---
 
-\- becomes more dangerous as it gets closer
+## ✨ Features
 
-\- attacks the player at close range
+- 🎯 **One-bullet gameplay mechanic**
+- 👁️ Enemy that freezes while observed
+- 🔦 Dynamic flashlight system
+- 🏃 Reactive enemy chase behaviour
+- 🔊 Positional creature audio
+- 🩸 Three-hit player death system
+- 💀 Cinematic death sequence
+- 🚪 Escape sequence
+- 🔀 Multiple endings
+- 📝 Environmental storytelling
+- ⏸️ Pause menu
+- ⚙️ Settings menu
+- 🖱️ Adjustable mouse sensitivity
+- 🔊 Adjustable master volume
+- 💾 Persistent settings using Unreal SaveGame
+- 🎬 Opening cinematic sequence
+- 🖤 Animated main menu
+- 📜 Cinematic credits
+- 🎮 Full controller-style gameplay input flow
 
-\- can be killed with the player's only bullet
-# 
+---
 
-# The player must decide whether using that bullet is really the right choice.
+## 🎮 Controls
 
----------------------------------------------------------------------------------
+| Action | Input |
+|:---|:---:|
+| Move | `W A S D` |
+| Look | `Mouse` |
+| Fire | `Left Mouse Button` |
+| Flashlight | `F` |
+| Pause | `ESC` |
 
-\ ✨ Features\
-# 
+---
 
-\- First-person psychological horror
+## 🔫 The Bullet
 
-\- One-bullet gameplay mechanic
+There is only one.
 
-\- Enemy that freezes while observed
+You cannot reload.
 
-\- Flashlight system
+You cannot find another.
 
-\- Dynamic creature audio
+You have to decide when — or if — to use it.
 
-\- Three-hit player death system
+> *The bullet isn't for it.*
 
-\- Death and escape cinematic sequences
+---
 
-\- Multiple endings
+## 🔊 Audio Design
 
-\- Pause menu
+Whisper uses spatial audio to make the player aware of its position even when it cannot be seen.
 
-\- Mouse sensitivity settings
+### Whisper Audio
 
-\- Master volume settings
+- Reveal
+- Growl
+- Running
+- Attack impact
 
-\- Persistent settings using Unreal SaveGame
+### Player / World Audio
 
-\- Main menu
+- Player death scream
+- Revolver gunshot
+- Dry-fire feedback
+- Tunnel ambience
+- Main menu music
+- UI hover and click feedback
 
-\- Credits screen
+The creature's running sound dynamically starts and stops depending on whether Whisper is currently moving.
 
-\- Environmental storytelling
+---
 
----------------------------------------------------------------------------------
+## 🛠️ Built With
 
-\ 🔊 Audio\
+<div align="center">
 
----------------------------------------------------------------------------------
+### Unreal Engine 5.8
 
-Whisper uses positional audio for:
-# 
+Primarily developed using **Blueprints**
 
-\- Reveal
+</div>
 
-\- Growl
+Core systems include:
 
-\- Running
+- Blueprint enemy AI
+- Line traces
+- Dot-product vision detection
+- Animation Notifies
+- Media Player cinematics
+- UMG interfaces
+- SaveGame persistence
+- Sound Classes / Sound Mixes
+- Spatial audio attenuation
+- Niagara effects
 
-\- Attacks
+---
 
----------------------------------------------------------------------------------
+## 📦 Releases
+v1.0.1 — Input & Mouse Focus Hotfix
+- Fixed mouse capture after restarting the level
+- Fixed player movement after returning from the ending to the Main Menu
+- Fixed gameplay input not restoring correctly when starting another run
+- Improved transitions between UI input and gameplay input
+- Improved viewport focus handling
 
-# Additional player and environmental audio is used throughout the game to create atmosphere and tension.
+v1.0 — Initial Release
+The first complete public release of The Last Bullet.
 
----------------------------------------------------------------------------------
+Included:
+- Complete gameplay loop
+- Whisper enemy
+- One-bullet mechanic
+- Multiple endings
+- Death and escape sequences
+- Main menu
+- Pause menu
+- Settings system
+- Persistent settings
+- Intro sequence
+- Credits
+- Creature audio
+- Windows Shipping build
 
- \🛠️ Development\
+---
 
----------------------------------------------------------------------------------
-
-\Engine:\
-
-# 
-
-\Unreal Engine 5.8\
-
----------------------------------------------------------------------------------
-
-\Project:\
-
-# 
-
-\TheLastBullet\
-
----------------------------------------------------------------------------------
-
-# The project was created primarily using Unreal Engine Blueprints.
-
----------------------------------------------------------------------------------
-
-Generated Unreal Engine folders such as the following are not tracked:
-Binaries/
-DerivedDataCache/
-Intermediate/
-Saved/
-
----------------------------------------------------------------------------------
-
-\📦 Third-Party Assets:\
-This project uses third-party assets obtained through sources such as Fab / Unreal Engine Marketplace.
-Examples include:
+## 🧩 Third-Party Assets
+This project uses selected third-party assets obtained from sources such as Fab / Unreal Engine Marketplace.
+These include assets such as:
 - Derelict Corridor environment
 - Whisper creature
 - Weapon Pack 03
-- additional audio and visual assets
-Third-party assets remain subject to their respective licenses.
-Some third-party source asset folders may intentionally be excluded from this Git repository and must be obtained separately from their original source.
-This repository is intended to track the development work of The Last Bullet, not redistribute marketplace assets.
+- Additional audio and visual assets
+All third-party content remains subject to its original license.
+Some downloadable asset packs are intentionally excluded from this repository.
+This repository exists to preserve the development history of The Last Bullet and is not intended to redistribute third-party marketplace content.
 
----------------------------------------------------------------------------------
+---
 
-\🏷️ Version Current release: v1.0.1\
+## 🗓️ Project History
+v1.0
+│
+├── First complete game
+├── Public itch.io release
+├── Windows Shipping build
+└── GitHub source archive
 
----------------------------------------------------------------------------------
+v1.0.1
+│
+├── Restart input fix
+├── Replay input fix
+└── Mouse focus improvements
 
-\🗺️ Development History:\
-The repository is used to preserve the development history of the project and track future improvements.
-Planned versioning:
-v1.0   Initial public release
-v1.0.x Bug fixes
-v1.1   Minor improvements / additional polish
-v2.0   Major future update
+Future
+│
+├── v1.1
+├── Additional polish
+└── ???
 
----------------------------------------------------------------------------------
+---
 
-\👤 Developer\
-Created by Hélder Gomes
-itch.io:
-https://m0nst3rg.itch.io/
 
----------------------------------------------------------------------------------
+## 👤 Developer
+<div align="center">
 
-❤️ Thank You
-Thank you for playing The Last Bullet.
+Hélder Gomes /
+M0nsT3rG
+</div>
+
+---
+
+## ❤️ Thank You For Playing
+<div align="center">
+THE LAST BULLET
+You have one bullet.
+Make it count.
+
 The bullet isn't for it.
-
----------------------------------------------------------------------------------
